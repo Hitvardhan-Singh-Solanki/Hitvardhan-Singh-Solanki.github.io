@@ -845,7 +845,7 @@ ol li {
 
 ul {
   list-style: disc;
-  margin: 0 0 2rem 0;
+  margin: 2em 0;
   padding-left: 1em;
 }
 
@@ -1726,6 +1726,26 @@ body.is-preload #header .content .inner {
   background-color: rgba(255, 255, 255, 0.175);
 }
 
+.company-date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pill p {
+  margin: 0;
+}
+
+.pill {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media screen and (max-width: 736px) {
   #main article {
     padding: 3.5rem 2rem 0.5rem 2rem;
@@ -1743,6 +1763,14 @@ body.is-preload #header .content .inner {
 @media screen and (max-width: 480px) {
   #main article {
     padding: 3rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  .company-date-container {
+    display: block;
+  }
+
+  .skill ul {
+    display: block;
   }
 }
 
@@ -1785,19 +1813,4 @@ body.is-article-visible #footer {
 
 body.is-preload #footer {
   opacity: 0;
-}
-
-.company-date-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.pill p {
-  margin: 0;
-}
-
-.pill {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
